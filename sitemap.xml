@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://flynnlaw.net/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://flynnlaw.net/workers-compensation/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/workers-compensation/denied-claims.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/workers-compensation/permanent-disability.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/workers-compensation/retaliation.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/workers-compensation/injured-worker-guide.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://flynnlaw.net/personal-injury/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/personal-injury/car-accidents.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/personal-injury/truck-accidents.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/personal-injury/fela-railroad.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://flynnlaw.net/about.html</loc><priority>0.7</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://flynnlaw.net/attorneys.html</loc><priority>0.7</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://flynnlaw.net/results.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/faq.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://flynnlaw.net/contact.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
+
+  <url><loc>https://flynnlaw.net/privacy.html</loc><priority>0.2</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://flynnlaw.net/disclaimer.html</loc><priority>0.2</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://flynnlaw.net/accessibility.html</loc><priority>0.2</priority><changefreq>yearly</changefreq></url>
+</urlset>

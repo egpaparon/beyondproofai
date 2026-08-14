@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /_dev/
+
+Sitemap: https://flynnlaw.net/sitemap.xml

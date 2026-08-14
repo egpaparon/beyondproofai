@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="presentation" aria-hidden="true">
+  <!--
+    Abstract structural line work — steel framing / girder geometry.
+    Deliberate placeholder art: reads as intentional graphic, never as a
+    broken image. Replace with commissioned photography when available.
+  -->
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#B07A3C" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#B07A3C" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#B07A3C" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="fade2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#D6A566" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#D6A566" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#12161C"/>
+
+  <g fill="none" stroke="url(#fade)" stroke-width="1.25">
+    <!-- primary girder frame -->
+    <path d="M120 900V180h420v720M540 180h520v720M1060 180h420v560"/>
+    <path d="M120 180h1360M120 340h1360M120 500h1360M120 660h1360"/>
+    <!-- diagonal bracing -->
+    <path d="M120 340 540 180M540 340 120 180M540 340l520-160M1060 340 540 180M1060 340l420-160M1480 340l-420-160"/>
+    <path d="M120 660 540 500M540 660 120 500M540 660l520-160M1060 660 540 500"/>
+  </g>
+
+  <g fill="none" stroke="url(#fade2)" stroke-width="2">
+    <path d="M120 500 540 340M540 500l520-160M1060 500l420-160"/>
+  </g>
+
+  <!-- rivet nodes -->
+  <g fill="#B07A3C" opacity="0.5">
+    <circle cx="120" cy="180" r="4"/><circle cx="540" cy="180" r="4"/>
+    <circle cx="1060" cy="180" r="4"/><circle cx="1480" cy="180" r="4"/>
+    <circle cx="120" cy="340" r="4"/><circle cx="540" cy="340" r="4"/>
+    <circle cx="1060" cy="340" r="4"/><circle cx="1480" cy="340" r="4"/>
+    <circle cx="120" cy="500" r="4"/><circle cx="540" cy="500" r="4"/>
+    <circle cx="1060" cy="500" r="4"/><circle cx="1480" cy="500" r="4"/>
+    <circle cx="120" cy="660" r="4"/><circle cx="540" cy="660" r="4"/>
+    <circle cx="1060" cy="660" r="4"/>
+  </g>
+</svg>

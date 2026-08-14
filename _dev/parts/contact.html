@@ -1,0 +1,189 @@
+<section class="section">
+  <div class="container">
+    <div class="split split--reverse">
+
+      <div class="form-card" data-reveal>
+        <h2 class="t-display-s">Free case review</h2>
+        <p class="text-muted mt-3" style="font-size:var(--t-sm)">
+          Three fields to start. Everything else is optional.
+        </p>
+
+        <form class="form mt-6" data-case-form data-success="{{P}}thank-you.html" novalidate>
+          <div class="form__first" style="display:grid;gap:var(--s-4)">
+            <div class="field-row field-row--2">
+              <div class="field">
+                <label class="field__label" for="c-first">First name <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="input" type="text" id="c-first" name="first_name" autocomplete="given-name" required>
+                <p class="field__error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-last">Last name</label>
+                <input class="input" type="text" id="c-last" name="last_name" autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="c-phone">Phone <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="input" type="tel" id="c-phone" name="phone" autocomplete="tel" required>
+              <p class="field__hint">The fastest way to get you an answer.</p>
+              <p class="field__error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="c-matter">What happened? <span class="field__req" aria-hidden="true">*</span></label>
+              <select class="select" id="c-matter" name="matter" required>
+                <option value="">Select one…</option>
+                <option>I was hurt at work</option>
+                <option>My workers' comp claim was denied</option>
+                <option>I disagree with my disability rating</option>
+                <option>Something changed at work after I filed</option>
+                <option>I was hurt in a car wreck</option>
+                <option>I was hurt in a semi-truck collision</option>
+                <option>I'm a railroad worker (FELA)</option>
+                <option>Slip, trip or fall</option>
+                <option>Something else</option>
+              </select>
+              <p class="field__error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form__more">
+            <div>
+              <div class="field">
+                <label class="field__label" for="c-email">Email <span class="text-faint" style="text-transform:none;letter-spacing:0">(optional)</span></label>
+                <input class="input" type="email" id="c-email" name="email" autocomplete="email">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="c-when">Roughly when did it happen?</label>
+                <input class="input" type="text" id="c-when" name="when" placeholder="e.g. last Tuesday, or March 2026">
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="c-detail">Tell us what happened</label>
+                <textarea class="textarea" id="c-detail" name="detail" rows="5" placeholder="What happened, whether you reported it and when, whether you've seen a doctor, and what you've been told so far."></textarea>
+                <p class="field__hint">Please do not include a Social Security number, financial account details, or other sensitive identifiers.</p>
+              </div>
+
+              <label class="checkbox">
+                <input type="checkbox" name="es" value="yes">
+                <span>Prefiero que me contacten en español</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" name="sms" value="yes">
+                <span>It's OK to text me at this number about my enquiry.</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn--lg btn--block" type="submit">Request my free case review</button>
+
+          <p class="form__legal">
+            Submitting this form does not create an attorney–client relationship, and
+            the information you send is not treated as confidential until we agree in
+            writing to represent you. Do not send time-sensitive information through
+            this form — if you are close to a deadline, call
+            <a href="tel:+19185830121">(918) 583-0121</a>. See our
+            <a href="{{P}}disclaimer.html">disclaimer</a> and
+            <a href="{{P}}privacy.html">privacy policy</a>.
+          </p>
+        </form>
+      </div>
+
+      <div class="stack-lg" data-reveal>
+        <div class="stack-sm">
+          <p class="eyebrow">Call</p>
+          <p class="t-display-m"><a href="tel:+19185830121" style="text-decoration:none">(918) 583-0121</a></p>
+          <p class="text-muted">
+            Free, confidential, no obligation. English or Spanish.<br>
+            Fax: (918) 583-2290
+          </p>
+        </div>
+
+        <hr class="rule rule--brass">
+
+        <div class="stack-sm">
+          <p class="eyebrow">Tulsa office</p>
+          <address style="font-style:normal;line-height:1.7">
+            <strong>Spirit Bank Tower</strong><br>
+            1800 S Baltimore Ave, Suite 500<br>
+            Tulsa, OK 74119
+          </address>
+          <p class="text-muted" style="font-size:var(--t-sm)">
+            Mailing: P.O. Box 4448, Tulsa, OK 74159
+          </p>
+          <p>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=1800+S+Baltimore+Ave+Suite+500+Tulsa+OK+74119" rel="noopener">
+              Directions
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true"><path d="M1 6h12M9 1.5 13.5 6 9 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </p>
+        </div>
+
+        <hr class="rule">
+
+        <div class="stack-sm">
+          <p class="eyebrow">Claremore office</p>
+          <p class="placeholder-note">
+            Confirm the second office. Firm materials reference both Claremore and Grove —
+            supply the correct address, suite and hours before launch.
+          </p>
+        </div>
+
+        <hr class="rule">
+
+        <div class="stack-sm">
+          <p class="eyebrow">Office hours</p>
+          <p class="text-muted">
+            Monday to Friday, 8:30am &ndash; 5:00pm
+            <span class="placeholder-note">Confirm hours</span>
+          </p>
+          <p class="text-muted" style="font-size:var(--t-sm)">
+            If something is urgent outside those hours — a deadline, a denial letter
+            with a date on it, or something happening at work right now — call and
+            leave a message describing it.
+          </p>
+        </div>
+
+        <div class="notice">
+          <span class="notice__icon" aria-hidden="true">
+            <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 6.5v4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="13.6" r="1" fill="currentColor"/></svg>
+          </span>
+          <div>
+            <p class="notice__title">Can't come to us?</p>
+            <p class="notice__body">
+              Say so when you call. If an injury makes travel difficult, that is a
+              logistics problem, not a reason to go without representation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink">
+  <div class="container">
+    <div class="split">
+      <div data-reveal>
+        <p class="eyebrow">Before you call</p>
+        <h2 class="mt-4">You do not need to have anything ready.</h2>
+      </div>
+      <div class="prose" data-reveal style="color:var(--text-inverse-muted)">
+        <p>
+          People delay calling because they think they need to gather documents
+          first. They do not. A description of what happened is enough to have a
+          useful conversation, and we can tell you what to look for afterwards.
+        </p>
+        <p>
+          If you <em>do</em> have them to hand, these help: any incident or accident
+          report, a denial letter, medical paperwork and work restrictions, recent
+          pay stubs, and your insurance declarations page.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
