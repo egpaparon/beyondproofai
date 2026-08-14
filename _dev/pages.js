@@ -136,7 +136,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: "Workers' Compensation" }],
         eyebrow: "Oklahoma Workers' Compensation",
-        h1: 'The claim is a process. The insurer knows it. You should too.',
+        h1: 'The claim is a process. The insurer knows it. <em>You should too.</em>',
         lead:
           "Flynn Law Firm has handled Oklahoma workers' compensation claims since 2000 — denials, disputed ratings, treatment fights, and employers who turn cold the week after an injury is reported.",
         actions: [
@@ -182,7 +182,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, WC, { name: 'Denied Claims' }],
         eyebrow: 'Denied &amp; Disputed Claims',
-        h1: 'A denial is a position. Not a ruling.',
+        h1: 'A denial is a position. <em>Not a ruling.</em>',
         lead:
           'An insurance company decided not to pay. That is not the same as the claim being over, and it is not the same as the Workers’ Compensation Commission agreeing. Most people who call this office have a denial letter in their hand.',
         actions: [
@@ -228,7 +228,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, WC, { name: 'Permanent Disability' }],
         eyebrow: 'Permanent Disability &amp; Settlements',
-        h1: 'A number decides what your injury was worth.',
+        h1: 'A number decides what your injury <em>was worth.</em>',
         lead:
           'At the end of an accepted claim a doctor assigns an impairment rating — a percentage. That percentage, more than anything else in the file, determines what you are paid. It is also the single most contested number in Oklahoma workers’ compensation.',
         actions: [
@@ -274,7 +274,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, WC, { name: 'Retaliation' }],
         eyebrow: 'Retaliation',
-        h1: 'It almost never looks like retaliation.',
+        h1: 'It almost never <em>looks like</em> retaliation.',
         lead:
           'Nobody hands you a letter saying you are being punished for filing a claim. What happens is that the write-ups start, the schedule changes, and a supervisor develops concerns about work nobody mentioned in six years.',
         actions: [
@@ -316,7 +316,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, WC, { name: "Injured Worker's Guide" }],
         eyebrow: 'The Guide',
-        h1: 'What to do after you are hurt at work in Oklahoma.',
+        h1: 'What to do after you are hurt at work <em>in Oklahoma.</em>',
         lead:
           'Written for the person it happened to, not for lawyers. The deadlines that matter, the forms that exist, what to say, what not to say, and where claims quietly fall apart.',
         actions: [
@@ -352,7 +352,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Personal Injury' }],
         eyebrow: 'Oklahoma Personal Injury',
-        h1: 'The other side started working on your case the day it happened.',
+        h1: 'The other side started working on your case <em>the day it happened.</em>',
         lead:
           'Adjusters, investigators and defence counsel were assigned within hours. Most injured people wait weeks before they talk to anyone. That gap is where cases are lost.',
         actions: [
@@ -398,7 +398,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, PI, { name: 'Car Accidents' }],
         eyebrow: 'Car &amp; Vehicle Collisions',
-        h1: 'The adjuster is friendly. That is the job.',
+        h1: 'The adjuster is friendly. <em>That is the job.</em>',
         lead:
           'Insurance adjusters are trained, measured and compensated on what they settle claims for. Being pleasant on the phone is part of the method, not an exception to it.',
         actions: [
@@ -440,7 +440,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, PI, { name: 'Semi-Truck Accidents' }],
         eyebrow: 'Semi-Truck &amp; Commercial Vehicles',
-        h1: 'The trucking company’s team was on scene before the road reopened.',
+        h1: 'The trucking company’s team was on scene <em>before the road reopened.</em>',
         lead:
           'Major carriers dispatch rapid-response investigators to serious collisions. They photograph, measure and interview while the other driver is still in an emergency room.',
         actions: [
@@ -482,7 +482,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, PI, { name: 'FELA &amp; Railroad' }],
         eyebrow: "FELA — Federal Employers' Liability Act",
-        h1: 'Railroad workers are in a different system entirely.',
+        h1: 'Railroad workers are in a <em>different system</em> entirely.',
         lead:
           "If you work for a railroad, workers' compensation does not apply to you. Your claim runs under FELA — a federal law that requires proving negligence, but that also allows recovery workers' compensation never will.",
         actions: [
@@ -518,7 +518,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'About the Firm' }],
         eyebrow: 'The Firm',
-        h1: 'Founded in 2000 by people who had seen how it goes wrong.',
+        h1: 'Founded in 2000 by people who had seen <em>how it goes wrong.</em>',
         lead:
           'The attorneys who started Flynn Law Firm had worked at larger firms. They left because of what they saw there — clients treated as file numbers, calls that went unreturned, and bills that grew faster than the case did.'
       }
@@ -544,7 +544,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Attorneys &amp; Team' }],
         eyebrow: 'Attorneys &amp; Team',
-        h1: 'You will know who is handling your file.',
+        h1: 'You will know <em>who is handling</em> your file.',
         lead:
           'A small firm by choice. That is the whole point of it — the person you speak with is the person working on your case, and you can reach them.'
       }
@@ -570,7 +570,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Results &amp; Reviews' }],
         eyebrow: 'Results &amp; Reviews',
-        h1: 'What we have recovered, and what clients said about it.',
+        h1: 'What we have recovered, and <em>what clients said</em> about it.',
         lead:
           'Every case is different and every outcome depends on its own facts. These are examples, not predictions — and we would rather show you a real one than a slogan.'
       }
@@ -622,7 +622,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'FAQ' }],
         eyebrow: 'Straight Answers',
-        h1: 'Questions we get on almost every call.',
+        h1: 'Questions we get on <em>almost every call.</em>',
         lead:
           'If yours is not here, ask it directly. The consultation is free and there is no obligation attached to it.'
       }
@@ -654,7 +654,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Contact' }],
         eyebrow: 'Free Case Review',
-        h1: 'Tell us what happened.',
+        h1: 'Tell us <em>what happened.</em>',
         lead:
           'Free, confidential, and no obligation. Describe the situation and we will tell you honestly whether there is a claim worth pursuing — including when there is not.'
       }
@@ -673,7 +673,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Thank you' }],
         eyebrow: 'Received',
-        h1: 'We have your request.',
+        h1: 'We have <em>your request.</em>',
         lead:
           'Someone from the firm will call you back. If it is urgent — a deadline, a denial letter with a date on it, or something happening at work right now — please call us directly rather than waiting.',
         actions: [{ cls: 'btn btn--brass', href: 'tel:+19185830121', label: 'Call (918) 583-0121' }]
@@ -692,7 +692,7 @@ module.exports = function ({ SERVICE, CRUMBS, FAQ }) {
       pageHead: {
         breadcrumb: [HOME, { name: 'Not found' }],
         eyebrow: 'Error 404',
-        h1: 'That page is not here.',
+        h1: 'That page <em>is not here.</em>',
         lead: 'The link may be old or mistyped. Here is where most people are trying to go.'
       }
     },

@@ -85,10 +85,15 @@ The case-review form validates, expands progressively, and redirects to
 
 ## 2. Recommended before launch
 
-- [ ] **Photography.** The hero currently uses a deliberate abstract SVG rather than a
-      broken stock image. Replace with real photography of the Tulsa office, the team,
-      and northeast Oklahoma. Rule from the design brief: no gavels, no scales, no
-      stock handshakes, no courthouse columns.
+- [ ] **Photography.** The hero is currently a clean navy gradient with no image — safe,
+      but a real photograph would lift it. Drop one into a `div.hero__bg` inside the hero
+      section (see the comment in `_dev/parts/home.html`); the CSS already handles the
+      overlay. The reference site pairs its dark bands with warm, human, in-context
+      photography — office, team, real northeast Oklahoma. Rule from the design brief:
+      no gavels, no scales, no stock handshakes, no courthouse columns.
+- [ ] **Interior page imagery.** The reference uses a photo-beside-text block ("Your
+      first visit, simplified"). The closest equivalent here is the process/steps
+      section — worth adding a photo panel once photography exists.
 - [ ] **Credential badges** (`results.html`) — add only credentials the firm currently
       holds. Each tile has a "what this actually means" line; fill it in. Check each
       awarding body's mark-usage rules. Delete tiles you cannot substantiate.

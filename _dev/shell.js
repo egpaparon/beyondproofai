@@ -22,6 +22,15 @@ const ARROW =
 const CHEV =
   '<svg class="nav__chev" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
+// Soft curve that separates a navy band from the section beneath it.
+// `tone` selects which background colour the curve is filled with.
+const wave = (tone) =>
+  `<div class="wave${tone ? ' wave--' + tone : ''}" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none" fill="none">
+      <path d="M0 90V38c180 34 380 50 600 34 220-16 420-46 620-52 80-2 160 2 220 10v60z" fill="currentColor"/>
+    </svg>
+  </div>`;
+
 /* ------------------------------------------------------------------ */
 
 function head(p, o) {
@@ -56,7 +65,7 @@ function head(p, o) {
 <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__flynnBooted)document.documentElement.classList.remove('js')},3000)</script>
 
 <link rel="icon" href="${p}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="${p}assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${p}assets/fonts/playfair-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${p}assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${p}assets/css/main.css">${jsonld}
 </head>
@@ -79,7 +88,10 @@ function header(p, current) {
         <span>Free consultation<span class="is-long"> — no obligation, no fee unless we win</span></span>
       </p>
       <div class="topbar__links">
-        <a href="${PHONE_HREF}"><strong>${PHONE_DISPLAY}</strong></a>
+        <a class="topbar__phone" href="${PHONE_HREF}">
+          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.2 3.3 8 6.1 6.4 7.9c.7 1.6 2.1 3 3.7 3.7l1.8-1.6 2.8 1.8-.4 2.4c-.1.6-.7 1.1-1.4 1-5-.6-8.9-4.5-9.5-9.5-.1-.7.4-1.3 1-1.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          ${PHONE_DISPLAY}
+        </a>
         <span class="lang">
           <span aria-current="true">EN</span>
           <span data-soon title="Español — coming soon">ES</span>
@@ -93,8 +105,15 @@ function header(p, current) {
   <div class="container">
     <div class="site-header__inner">
       <a class="wordmark" href="${p}index.html" aria-label="Flynn Law Firm — home">
-        <span class="wordmark__name">Flynn Law Firm</span>
-        <span class="wordmark__sub">Tulsa · Since 2000</span>
+        <svg class="wordmark__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22.5" fill="#123F5C"/>
+          <path d="M16 13h17v5.6H22.2v6.1h9.6v5.6h-9.6V35H16z" fill="#fff"/>
+          <path d="M16 37.5h17" stroke="#E2725B" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="wordmark__text">
+          <span class="wordmark__name">Flynn Law Firm</span>
+          <span class="wordmark__sub">Tulsa · Since 2000</span>
+        </span>
       </a>
 
       <nav class="nav" id="primary-nav" aria-label="Primary">
@@ -140,10 +159,6 @@ function header(p, current) {
       </nav>
 
       <div class="header__actions">
-        <a class="header__phone" href="${PHONE_HREF}">
-          <small>Free consultation</small>
-          <strong>${PHONE_DISPLAY}</strong>
-        </a>
         <a class="btn btn--sm" href="${p}contact.html">Free case review</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           <span class="nav-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -165,17 +180,15 @@ function ctaBand(p) {
   return `
 <section class="cta-band">
   <div class="container">
-    <div class="cta-band__grid">
-      <div data-reveal>
-        <p class="eyebrow">No cost to find out</p>
-        <h2 class="mt-4">Tell us what happened. We will tell you honestly whether you have a claim.</h2>
-        <p>
-          Including when the answer is no. The consultation is free, it obligates you
-          to nothing, and you can have it in English or Spanish.
-        </p>
-      </div>
-      <div class="cta-band__actions" data-reveal>
-        <a class="btn btn--brass btn--lg" href="${PHONE_HREF}">${PHONE_DISPLAY}</a>
+    <div class="cta-band__grid" data-reveal>
+      <p class="eyebrow">No cost to find out</p>
+      <h2 class="mt-4">Tell us what happened. We'll tell you <em>honestly</em> whether you have a claim.</h2>
+      <p>
+        Including when the answer is no. The consultation is free, it obligates you
+        to nothing, and you can have it in English or Spanish.
+      </p>
+      <div class="cta-band__actions">
+        <a class="btn btn--lg" href="${PHONE_HREF}">Call ${PHONE_DISPLAY}</a>
         <a class="btn btn--ghost-inverse btn--lg" href="${p}contact.html">Free case review</a>
       </div>
     </div>
@@ -192,14 +205,16 @@ function footer(p) {
     <div class="footer__top">
       <div class="footer__brand">
         <span class="wordmark">
-          <span class="wordmark__name">Flynn Law Firm</span>
-          <span class="wordmark__sub">PLLC · Since 2000</span>
+          <span class="wordmark__text">
+            <span class="wordmark__name">Flynn Law Firm</span>
+            <span class="wordmark__sub">PLLC · Since 2000</span>
+          </span>
         </span>
         <p class="footer__blurb">
           Oklahoma workers' compensation and injury lawyers. We represent injured
           people — never insurers, never employers.
         </p>
-        <p class="mt-5"><a class="link-arrow" href="${PHONE_HREF}" style="color:var(--brass-on-ink)">${PHONE_DISPLAY}</a></p>
+        <p class="mt-5"><a class="btn btn--sm" href="${PHONE_HREF}">Call ${PHONE_DISPLAY}</a></p>
       </div>
 
       <div class="footer__col">
@@ -314,8 +329,9 @@ function pageHead(p, o) {
     <p class="eyebrow mt-5">${o.eyebrow}</p>
     <h1>${o.h1}</h1>
     <p class="page-head__lead">${o.lead}</p>
-    ${actions ? `<div class="cluster mt-7">\n      ${actions}\n    </div>` : ''}
+    ${actions ? `<div class="cluster cluster--center mt-7">\n      ${actions}\n    </div>` : ''}
   </div>
+  ${wave(o.waveTone)}
 </section>
 `;
 }
