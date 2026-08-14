@@ -122,7 +122,7 @@
 
   --header-h: 4.75rem;
 
-  /* --- LIGHT THEME (default) ------------------------------------------ */
+  /* --- PALETTE — light mode only, no dark variant ---------------------- */
   --navy-900: #0e2a3f;
   --navy-800: #123f5c;
   --navy-700: #17547a;
@@ -172,100 +172,9 @@
   --shadow-lg: 0 10px 30px rgba(16, 42, 61, 0.15);
   --shadow-xl: 0 20px 50px rgba(16, 42, 61, 0.18);
 
-  color-scheme: light;
-}
-
-/* --- DARK THEME ------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg: #0b1a26;
-    --bg-alt: #0f2434;
-    --bg-tint: #143043;
-    --bg-surface: #12293a;
-    --bg-inverse: #081521;
-
-    --text: #e7eef4;
-    --text-muted: #a7bcca;
-    --text-faint: #7f97a7;
-    --text-inverse: #ffffff;
-    --text-inverse-muted: #c5d9e6;
-
-    --heading: #e7eef4;
-
-    --blue-200: #1d4661;
-    --blue-100: #16344a;
-    --blue-50: #0f2434;
-
-    --coral: #ef8770;
-    --coral-dark: #f0997f;
-    --coral-100: #46261f;
-    --coral-wash: rgba(239, 135, 112, 0.12);
-
-    --gold: #efb377;
-    --sand-100: #3d3020;
-
-    --line: rgba(231, 238, 244, 0.12);
-    --line-2: rgba(231, 238, 244, 0.2);
-    --line-strong: rgba(231, 238, 244, 0.45);
-
-    --urgent: #e8776a;
-    --urgent-wash: rgba(232, 119, 106, 0.12);
-    --positive: #63c39c;
-
-    --focus: #7fb6dd;
-
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
-    --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.55);
-
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme='dark'] {
-  --bg: #0b1a26;
-  --bg-alt: #0f2434;
-  --bg-tint: #143043;
-  --bg-surface: #12293a;
-  --bg-inverse: #081521;
-
-  --text: #e7eef4;
-  --text-muted: #a7bcca;
-  --text-faint: #7f97a7;
-  --text-inverse: #ffffff;
-  --text-inverse-muted: #c5d9e6;
-
-  --heading: #e7eef4;
-
-  --blue-200: #1d4661;
-  --blue-100: #16344a;
-  --blue-50: #0f2434;
-
-  --coral: #ef8770;
-  --coral-dark: #f0997f;
-  --coral-100: #46261f;
-  --coral-wash: rgba(239, 135, 112, 0.12);
-
-  --gold: #efb377;
-  --sand-100: #3d3020;
-
-  --line: rgba(231, 238, 244, 0.12);
-  --line-2: rgba(231, 238, 244, 0.2);
-  --line-strong: rgba(231, 238, 244, 0.45);
-
-  --urgent: #e8776a;
-  --urgent-wash: rgba(232, 119, 106, 0.12);
-  --positive: #63c39c;
-
-  --focus: #7fb6dd;
-
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.55);
-
-  color-scheme: dark;
+  /* "only light" — not just "light" — so Chrome's auto-dark-theme on Android
+     cannot invert the palette. This site is light-mode only by design. */
+  color-scheme: only light;
 }
 
 /* ==========================================================================
